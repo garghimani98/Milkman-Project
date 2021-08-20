@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billlog.billlogViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="64.0" prefWidth="305.0" style="-fx-background-color: black;" text="BILL LOG" textFill="#06c4f8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="148.0" layoutX="338.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="combomon" layoutX="14.0" layoutY="99.0" prefHeight="25.0" prefWidth="84.0" />
+      <ComboBox fx:id="comboyr" layoutX="117.0" layoutY="99.0" prefHeight="25.0" prefWidth="72.0" />
+      <Button layoutX="224.0" layoutY="99.0" mnemonicParsing="false" onAction="#doFillmy" text="Fetch" />
+      <Separator layoutX="41.0" layoutY="85.0" prefHeight="4.0" prefWidth="251.0" style="-fx-background-color: black;" />
+      <RadioButton fx:id="rbpaid" layoutX="225.0" layoutY="148.0" mnemonicParsing="false" text="Paid">
+         <toggleGroup>
+            <ToggleGroup fx:id="status" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbpending" layoutX="287.0" layoutY="148.0" mnemonicParsing="false" text="Pending" toggleGroup="$status" />
+      <Button layoutX="365.0" layoutY="144.0" mnemonicParsing="false" onAction="#doFills" text="Fetch Bill" />
+      <Label layoutX="225.0" layoutY="193.0" text="Mobile" />
+      <Button layoutX="386.0" layoutY="189.0" mnemonicParsing="false" onAction="#doFillm" text="Total bill history" />
+      <TableView fx:id="tblbill" layoutX="16.0" layoutY="238.0" prefHeight="200.0" prefWidth="461.0" />
+      <Button layoutX="214.0" layoutY="461.0" mnemonicParsing="false" onAction="#doSend" text="Export to Excel" />
+      <TextField fx:id="txtmob" layoutX="264.0" layoutY="189.0" prefHeight="25.0" prefWidth="101.0" />
+   </children>
+</AnchorPane>

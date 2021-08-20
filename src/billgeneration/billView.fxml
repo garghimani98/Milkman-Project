@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billgeneration.billViewController">
+   <children>
+      <ListView fx:id="mobile" layoutX="7.0" layoutY="127.0" onMouseClicked="#dofill" prefHeight="200.0" prefWidth="96.0" />
+      <ListView fx:id="name" layoutX="103.0" layoutY="127.0" prefHeight="200.0" prefWidth="87.0" />
+      <Label layoutX="52.0" layoutY="108.0" text="Mobile" />
+      <Label layoutX="131.0" layoutY="108.0" text="Name" />
+      <ComboBox fx:id="month" layoutX="320.0" layoutY="67.0" prefHeight="25.0" prefWidth="69.0" />
+      <ComboBox fx:id="year" layoutX="419.0" layoutY="67.0" prefHeight="25.0" prefWidth="69.0" />
+      <Label layoutX="336.0" layoutY="45.0" text="Month" />
+      <Label layoutX="432.0" layoutY="45.0" text="Year" />
+      <ComboBox fx:id="date" layoutX="216.0" layoutY="67.0" prefHeight="25.0" prefWidth="69.0" />
+      <Label layoutX="226.0" layoutY="45.0" text="End Date" />
+      <Label layoutX="261.0" layoutY="194.0" text="Bill" />
+      <Label layoutX="261.0" layoutY="162.0" text="Quantity" />
+      <Label layoutX="261.0" layoutY="131.0" text="Rate" />
+      <Label layoutX="394.0" layoutY="99.0" text="BUFFALO" />
+      <Label layoutX="330.0" layoutY="99.0" text="COW" />
+      <Separator layoutX="244.0" layoutY="116.0" prefWidth="200.0" />
+      <Label layoutX="340.0" layoutY="128.0" />
+      <Label layoutX="405.0" layoutY="123.0" />
+      <Label layoutX="341.0" layoutY="162.0" />
+      <Label layoutX="287.0" layoutY="262.0" text="TOTAL" />
+      <TextField fx:id="txttotal" layoutX="331.0" layoutY="258.0" />
+      <Label layoutX="287.0" layoutY="356.0" text="Status" />
+      <TextField fx:id="txtstatus" layoutX="333.0" layoutY="352.0" prefHeight="25.0" prefWidth="82.0" />
+      <Button layoutX="296.0" layoutY="303.0" mnemonicParsing="false" onAction="#doBilll" prefHeight="25.0" prefWidth="116.0" text="generatebill" />
+      <TextField fx:id="txtcrb" layoutX="314.0" layoutY="127.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="txtcqb" layoutX="316.0" layoutY="158.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="txtbqb" layoutX="394.0" layoutY="158.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="txtbbb" layoutX="394.0" layoutY="190.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="txtcbb" layoutX="319.0" layoutY="190.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="txtbrb" layoutX="394.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" />
+   </children>
+</AnchorPane>
